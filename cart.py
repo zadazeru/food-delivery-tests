@@ -13,4 +13,4 @@ def cart_total(prices, discount=0):
         if price < 0:
             raise ValueError("Ціна не може бути від’ємною")
         total += price
-    return round(total * (100 + discount) / 100, 2)
+    return round(total * (100 - discount) / 100, 2)
